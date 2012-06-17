@@ -1,12 +1,15 @@
 {
-	"auto_upgrade_last_run": 1339338211,
+	"auto_upgrade_last_run": 1339868125,
 	"installed_packages":
 	[
+		"AAAPackageDev",
 		"Alignment",
 		"Haml",
 		"Package Control",
 		"Sass",
 		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"Tag",
 		"Theme - Soda Refined"
 	]
 }

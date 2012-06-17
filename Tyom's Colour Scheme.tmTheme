@@ -44,8 +44,6 @@
 			<string>keyword.operator.class, constant.other, source.php.embedded.line</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
 				<string>#CED1CF</string>
 			</dict>
@@ -65,13 +63,22 @@
 			<key>name</key>
 			<string>Number, Constant, Function Argument, Tag Attribute, Embedded</string>
 			<key>scope</key>
-			<string>constant.numeric, constant.language, support.constant, constant.character, variable.parameter, punctuation.section.embedded, keyword.other.unit</string>
+			<string>constant.numeric, constant.language, support.constant, constant.character, variable.parameter, punctuation.section.embedded, keyword.other.unit, constant.other.rgb-value</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
 				<string>#DE935F</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Unit</string>
+			<key>scope</key>
+			<string>constant.other.unit.sass</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#DE935F88</string>
 			</dict>
 		</dict>
 		<dict>
@@ -81,8 +88,6 @@
 			<string>entity.name.class, entity.name.type.class, support.type, support.class</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
 				<string>#F0C674</string>
 			</dict>
@@ -94,8 +99,6 @@
 			<string>string, constant.other.symbol, entity.other.inherited-class, markup.heading, variable.parameter.url</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
 				<string>#B5BD68</string>
 			</dict>
@@ -118,8 +121,6 @@
 			<string>entity.name.function, meta.function-call, support.function, keyword.other.special-method, meta.block-level, support.constant.@rules.sass</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
 				<string>#81A2BE</string>
 			</dict>
@@ -131,8 +132,6 @@
 			<string>keyword, storage, storage.type, entity.name.tag.css</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
 				<string>#B294BB</string>
 			</dict>
@@ -146,8 +145,6 @@
 			<dict>
 				<key>background</key>
 				<string>#DF5F5F</string>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
 				<string>#CED2CF</string>
 			</dict>
@@ -174,8 +171,6 @@
 			<dict>
 				<key>background</key>
 				<string>#B798BF</string>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
 				<string>#CED2CF</string>
 			</dict>
