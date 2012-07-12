@@ -1,9 +1,12 @@
 {
 	"color_scheme": "Packages/User/Tyom's Colour Scheme.tmTheme",
 	"dictionary": "Packages/Language - English/en_GB.dic",
-	"font_face": "Andale Mono",
-	"font_size": 15,
-	"sublimelinter_fill_outlines": true,
-	"sublimelinter_gutter_marks": true,
-	"theme": "Soda Dark Refined.sublime-theme"
+	"font_face": "Menlo",
+	"font_size": 14,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"theme": "ProKit.sublime-theme",
+	"translate_tabs_to_spaces": true
 }

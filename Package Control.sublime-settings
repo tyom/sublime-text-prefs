@@ -1,15 +1,30 @@
 {
-	"auto_upgrade_last_run": 1339868125,
+	"auto_upgrade_last_run": 1342106007,
 	"installed_packages":
 	[
 		"AAAPackageDev",
 		"Alignment",
+		"BeautifyRuby",
+		"CoffeeScript",
+		"FileDiffs",
+		"Git",
 		"Haml",
+		"JsFormat",
+		"LESS",
 		"Package Control",
 		"Sass",
 		"SideBarEnhancements",
+		"StringEncode",
+		"sublime-closure-linter",
 		"SublimeCodeIntel",
+		"SublimeLinter",
 		"Tag",
-		"Theme - Soda Refined"
+		"Theme - Aqua",
+		"TrailingSpaces",
+		"ZenCoding"
+	],
+	"repositories":
+	[
+		"https://github.com/jdc0589/JsFormat"
 	]
 }
