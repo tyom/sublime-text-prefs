@@ -20,7 +20,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>\{\{(#|\?|\^|%)?\s?(with|component)?</string>
+			<string>\{\{(#|\?|\^|%|&lt;&lt;?|&gt;)?\s?(\w+[\s[^\}]])?</string>
 			<key>captures</key>
 			<dict>
 				<key>0</key>
@@ -40,7 +40,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>\{\{\/(\?|#)\}\}</string>
+			<string>(\/[&lt;%#])?\}\}</string>
 			<key>name</key>
 			<string>text.eyebrow.embedded.html</string>
 			<key>patterns</key>
@@ -67,7 +67,7 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>"\s</string>
+					<string>"[\s]?</string>
 					<key>name</key>
 					<string>string-quotes</string>
 				</dict>

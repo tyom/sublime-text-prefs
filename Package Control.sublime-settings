@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1346894809,
+	"auto_upgrade_last_run": 1346923630,
 	"installed_packages":
 	[
 		"AAAPackageDev",
@@ -12,6 +12,7 @@
 		"JsFormat",
 		"LESS",
 		"Minifier",
+		"nginx",
 		"Package Control",
 		"SaneSnippets",
 		"Sass",
@@ -22,6 +23,7 @@
 		"SublimeLinter",
 		"Tag",
 		"Theme - Aqua",
+		"Theme - Aqua.old",
 		"TrailingSpaces",
 		"ZenCoding"
 	],

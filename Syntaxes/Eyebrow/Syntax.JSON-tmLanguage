@@ -9,7 +9,7 @@
       "end": "\\}\\}"
     }, {
       "name": "text.eyebrow.embedded.html",
-      "begin": "\\{\\{(#|\\?|\\^|%)?\\s?(with|component)?",
+      "begin": "\\{\\{(#|\\?|\\^|%|<<?|>)?\\s?(\\w+[\\s[^\\}]])?",
       "captures": {
         "0": {
           "name": "keyword.control"
@@ -35,10 +35,10 @@
               "name": "string"
             }
           },
-          "end": "\"\\s"
+          "end": "\"[\\s]?"
         }
       ],
-      "end": "\\{\\{\\/(\\?|#)\\}\\}"
+      "end": "(\\/[<%#])?\\}\\}"
     }, {
       "include": "text.html.basic"
     }
