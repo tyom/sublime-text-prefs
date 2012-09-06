@@ -1,0 +1,13 @@
+<snippet><description>HAML HTML5 Template</description><tabTrigger>template</tabTrigger><scope>text.haml</scope><content>
+<![CDATA[!!! 5
+%html{ :lang => "en" }
+  %head
+    %meta{ :charset => "utf-8" }
+    %meta{ :content => "IE=edge,chrome=1", 'http-equiv' => "X-UA-Compatible"}
+    %title ${1:Untitled}
+    %link{ :rel => "stylesheet", :href => "${2:stylesheet}" }
+    %script{ :src => "${3:script}" }
+  %body
+    #page
+]]>
+</content></snippet>

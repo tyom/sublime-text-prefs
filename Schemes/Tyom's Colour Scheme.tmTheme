@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-	<!-- Currently using this theme as basis to write my own -->
 <dict>
 	<key>comment</key>
 	<string>http://chriskempson.com</string>
@@ -105,6 +104,17 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>String Contents</string>
+			<key>scope</key>
+			<string>string-quotes</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#B5BD6888</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Operator, Misc</string>
 			<key>scope</key>
 			<string>keyword.operator, constant.other.color</string>
@@ -175,94 +185,91 @@
 				<string>#CED2CF</string>
 			</dict>
 		</dict>
-
-        <!-- SublimeLinter -->
-
-        <dict>
-            <key>name</key>
-            <string>SublimeLinter Annotations</string>
-            <key>scope</key>
-            <string>sublimelinter.notes</string>
-            <key>settings</key>
-            <dict>
-                <key>background</key>
-                <string>#FFFFAA</string>
-                <key>foreground</key>
-                <string>#FFFFFF</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>name</key>
-            <string>SublimeLinter Error Outline</string>
-            <key>scope</key>
-            <string>sublimelinter.outline.illegal</string>
-            <key>settings</key>
-            <dict>
-                <key>background</key>
-                <string>#dc133a66</string>
-                <key>foreground</key>
-                <string>#dc133a44</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>name</key>
-            <string>SublimeLinter Error Underline</string>
-            <key>scope</key>
-            <string>sublimelinter.underline.illegal</string>
-            <key>settings</key>
-            <dict>
-                <key>background</key>
-                <string>#dc133a</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>name</key>
-            <string>SublimeLinter Warning Outline</string>
-            <key>scope</key>
-            <string>sublimelinter.outline.warning</string>
-            <key>settings</key>
-            <dict>
-                <key>background</key>
-                <string>#DF940066</string>
-                <key>foreground</key>
-                <string>#DF940066</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>name</key>
-            <string>SublimeLinter Warning Underline</string>
-            <key>scope</key>
-            <string>sublimelinter.underline.warning</string>
-            <key>settings</key>
-            <dict>
-                <key>background</key>
-                <string>#DF9400</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>name</key>
-            <string>SublimeLinter Violation Outline</string>
-            <key>scope</key>
-            <string>sublimelinter.outline.violation</string>
-            <key>settings</key>
-            <dict>
-                <key>background</key>
-                <string>#ffffff33</string>
-                <key>foreground</key>
-                <string>#FFFFFF</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>name</key>
-            <string>SublimeLinter Violation Underline</string>
-            <key>scope</key>
-            <string>sublimelinter.underline.violation</string>
-            <key>settings</key>
-            <dict>
-                <key>background</key>
-                <string>#FF0000</string>
-            </dict>
-        </dict>
+		<dict>
+			<key>name</key>
+			<string>SublimeLinter Annotations</string>
+			<key>scope</key>
+			<string>sublimelinter.notes</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#FFFFAA</string>
+				<key>foreground</key>
+				<string>#FFFFFF</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>SublimeLinter Error Outline</string>
+			<key>scope</key>
+			<string>sublimelinter.outline.illegal</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#dc133a66</string>
+				<key>foreground</key>
+				<string>#dc133a44</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>SublimeLinter Error Underline</string>
+			<key>scope</key>
+			<string>sublimelinter.underline.illegal</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#dc133a</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>SublimeLinter Warning Outline</string>
+			<key>scope</key>
+			<string>sublimelinter.outline.warning</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#DF940066</string>
+				<key>foreground</key>
+				<string>#DF940066</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>SublimeLinter Warning Underline</string>
+			<key>scope</key>
+			<string>sublimelinter.underline.warning</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#DF9400</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>SublimeLinter Violation Outline</string>
+			<key>scope</key>
+			<string>sublimelinter.outline.violation</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#ffffff33</string>
+				<key>foreground</key>
+				<string>#FFFFFF</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>SublimeLinter Violation Underline</string>
+			<key>scope</key>
+			<string>sublimelinter.underline.violation</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#FF0000</string>
+			</dict>
+		</dict>
 	</array>
 	<key>uuid</key>
 	<string>F96223EB-1A60-4617-92F3-D24D4F13DB09</string>

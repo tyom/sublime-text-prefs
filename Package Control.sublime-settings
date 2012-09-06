@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1342310809,
+	"auto_upgrade_last_run": 1346894809,
 	"installed_packages":
 	[
 		"AAAPackageDev",
@@ -11,7 +11,9 @@
 		"Haml",
 		"JsFormat",
 		"LESS",
+		"Minifier",
 		"Package Control",
+		"SaneSnippets",
 		"Sass",
 		"SideBarEnhancements",
 		"StringEncode",

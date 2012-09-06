@@ -1,0 +1,47 @@
+{
+  "name": "HTML Eyebrow",
+  "scopeName": "text.html.eyebrow",
+  "fileTypes": ["eyebrow"],
+  "patterns": [
+    {
+      "name": "comment.block.eyebrow",
+      "begin": "\\{\\{!",
+      "end": "\\}\\}"
+    }, {
+      "name": "text.eyebrow.embedded.html",
+      "begin": "\\{\\{(#|\\?|\\^|%)?\\s?(with|component)?",
+      "captures": {
+        "0": {
+          "name": "keyword.control"
+        },
+        "1": {
+          "name": "variable.parameter"
+        },
+        "2": {
+          "name": "support.function"
+        }
+      },
+      "patterns": [
+        {
+          "include": "$self"
+        }, {
+          "name": "keyword.operator",
+          "match": "@"
+        }, {
+          "name": "string-quotes",
+          "begin": "\"([^\"]+)",
+          "captures": {
+            "1": {
+              "name": "string"
+            }
+          },
+          "end": "\"\\s"
+        }
+      ],
+      "end": "\\{\\{\\/(\\?|#)\\}\\}"
+    }, {
+      "include": "text.html.basic"
+    }
+  ],
+  "uuid": "6aa4dd19-fd95-4150-ac42-70d7ba08ff23"
+}
