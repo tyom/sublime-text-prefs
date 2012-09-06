@@ -9,7 +9,7 @@
       "end": "\\}\\}"
     }, {
       "name": "text.eyebrow.embedded.html",
-      "begin": "\\{\\{(#|\\?|\\^|%|<<?|>)?\\s?([a-zA-z_\\/]+[\\s[^\\}]])?",
+      "begin": "\\{\\{(#|\\?|\\^|%|<<?|>)?\\s?([a-z_]+[\\s[^\\}]])?",
       "captures": {
         "0": {
           "name": "keyword.control"
@@ -26,7 +26,7 @@
           "include": "$self"
         }, {
           "name": "keyword.operator",
-          "match": "@[a-zA-Z]+"
+          "match": "@"
         }, {
           "name": "string-quotes",
           "begin": "\"([^\"]+)",

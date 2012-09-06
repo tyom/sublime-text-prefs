@@ -20,7 +20,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>\{\{(#|\?|\^|%|&lt;&lt;?|&gt;)?\s?([a-zA-z_\/]+[\s[^\}]])?</string>
+			<string>\{\{(#|\?|\^|%|&lt;&lt;?|&gt;)?\s?([a-z_]+[\s[^\}]])?</string>
 			<key>captures</key>
 			<dict>
 				<key>0</key>
@@ -51,7 +51,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>@[a-zA-Z]+</string>
+					<string>@</string>
 					<key>name</key>
 					<string>keyword.operator</string>
 				</dict>
