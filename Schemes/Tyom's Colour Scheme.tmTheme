@@ -51,11 +51,22 @@
 			<key>name</key>
 			<string>Variable, String Link, Regular Expression, Tag Name</string>
 			<key>scope</key>
-			<string>variable, support.other.variable, string.other.link, string.regexp, entity.name.tag, entity.other.attribute-name, meta.tag, declaration.tag, entity.other.eyebrow.delimiter.variable</string>
+			<string>variable, support.other.variable, string.other.link, string.regexp, entity.name.tag, entity.other.attribute-name, meta.tag, declaration.tag</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#b4635f</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Variable Lighter</string>
+			<key>scope</key>
+			<string>entity.other.eyebrow.delimiter.variable</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#b4635faa</string>
 			</dict>
 		</dict>
 		<dict>
@@ -110,7 +121,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#B5BD6888</string>
+				<string>#c1cc7e88</string>
 			</dict>
 		</dict>
 		<dict>

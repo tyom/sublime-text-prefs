@@ -11,5 +11,6 @@
 	"theme": "Soda Dark.sublime-theme",
 	// "theme": "ProKit.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"use_simple_full_screen": true
+	"use_simple_full_screen": true,
+	"detect_slow_plugins": false
 }

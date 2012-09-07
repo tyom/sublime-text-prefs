@@ -28,9 +28,15 @@
         },
         {
             "name": "Variable, String Link, Regular Expression, Tag Name",
-            "scope": "variable, support.other.variable, string.other.link, string.regexp, entity.name.tag, entity.other.attribute-name, meta.tag, declaration.tag, entity.other.eyebrow.delimiter.variable",
+            "scope": "variable, support.other.variable, string.other.link, string.regexp, entity.name.tag, entity.other.attribute-name, meta.tag, declaration.tag",
             "settings": {
                 "foreground": "#b4635f"
+            }
+        },        {
+            "name": "Variable Lighter",
+            "scope": "entity.other.eyebrow.delimiter.variable",
+            "settings": {
+                "foreground": "#b4635fbb"
             }
         },
         {
