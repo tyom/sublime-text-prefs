@@ -27,7 +27,7 @@
 			<key>name</key>
 			<string>comment.block.jinja</string>
 		</dict>
-		<!-- All eyebrow tags -->
+		<!-- Eyebrow -->
 		<dict>
 			<key>begin</key>
 			<string>{{{?\s?</string>
@@ -62,43 +62,30 @@
 		<dict>
 			<key>patterns</key>
 			<array>
-				<!-- Eyebrow function open tag -->
+				<!-- Tags -->
 				<dict>
 					<key>match</key>
-					<string>(%|#|\?|&lt;&lt;?|\^)\s([a-zA-Z_]+)?([a-zA-Z/]+)?</string>
+					<string>(%|#|\?|&lt;&lt;?|\^)\s([a-zA-Z_]+)?</string>
 					<key>captures</key>
 					<dict>
-						<key>0</key>
-						<dict>
-							<key>name</key>
-							<string>entity.other.eyebrow.delimiter.variable</string>
-						</dict>
+						<!-- Tag symbol -->
 						<key>1</key>
 						<dict>
 							<key>name</key>
 							<string>keyword.control.eyebrow</string>
 						</dict>
 						<key>2</key>
+						<!-- Custom tags -->
 						<dict>
 							<key>name</key>
 							<string>entity.name.function</string>
 						</dict>
-						<key>3</key>
-						<dict>
-							<key>name</key>
-							<string>constant.other.symbol</string>
-						</dict>
 					</dict>
 				</dict>
-				<!-- Eyebrow partial tag -->
+				<!-- Close tag -->
 				<dict>
 					<key>match</key>
-					<string>></string>
-					<key>name</key>
-					<string>punctuation.section.embedded</string>
-				</dict>
-				<!-- Eyebrow function close tag -->
-				<dict>
+					<string>(\/)(%|#|\?|&lt;)</string>
 					<key>captures</key>
 					<dict>
 						<key>0</key>
@@ -112,8 +99,26 @@
 							<string>comment</string>
 						</dict>
 					</dict>
+				</dict>
+				<!-- Unquoted path -->
+				<dict>
 					<key>match</key>
-					<string>(\/)(%|#|\?|&lt;)</string>
+					<string>(([^"]+?)+\/([^\/}\s]+))</string>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>variable.parameter.url</string>
+						</dict>
+					</dict>
+				</dict>
+				<!-- Partial tag -->
+				<dict>
+					<key>match</key>
+					<string>></string>
+					<key>name</key>
+					<string>punctuation.section.embedded</string>
 				</dict>
 				<!-- Context property -->
 				<dict>
@@ -136,18 +141,23 @@
 					<key>name</key>
 					<string>variable.parameter</string>
 				</dict>
-				<!-- Expression (filter) -->
+				<!-- Filters -->
 				<dict>
 					<key>match</key>
-					<string>[a-zA-Z_]*(\|)\w+(:)</string>
+					<string>[a-zA-Z_]*(\|)(\w+)(:)</string>
 					<key>captures</key>
 					<dict>
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>variable</string>
+							<string>entity.other.eyebrow.delimiter.variable</string>
 						</dict>
 						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>constant.other.color</string>
+						</dict>
+						<key>3</key>
 						<dict>
 							<key>name</key>
 							<string>comment</string>
