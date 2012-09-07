@@ -65,7 +65,7 @@
             "name": "String quotes",
             "scope": "string.quotes",
             "settings": {
-                "foreground": "#B5BD6888"
+                "foreground": "#c1cc7e88"
             }
         },
         {

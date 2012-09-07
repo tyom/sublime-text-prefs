@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1346976371,
+	"auto_upgrade_last_run": 1347044195,
 	"installed_packages":
 	[
 		"AAAPackageDev",
@@ -7,6 +7,7 @@
 		"BeautifyRuby",
 		"BracketHighlighter",
 		"CoffeeScript",
+		"ColorPicker",
 		"FileDiffs",
 		"Git",
 		"Haml",

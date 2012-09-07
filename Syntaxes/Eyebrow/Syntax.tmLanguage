@@ -103,7 +103,7 @@
 					<key>match</key>
 					<string>[@][a-zA-Z_]*</string>
 					<key>name</key>
-					<string>entity.name.class</string>
+					<string>constant.other.color</string>
 				</dict>
 				<!-- Quoted strings -->
 				<dict>
@@ -134,7 +134,7 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>(\w+\/?)+\s</string>
+					<string>(\w+\/)?+</string>
 				</dict>
 			</array>
 		</dict>
