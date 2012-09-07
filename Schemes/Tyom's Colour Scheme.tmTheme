@@ -51,11 +51,11 @@
 			<key>name</key>
 			<string>Variable, String Link, Regular Expression, Tag Name</string>
 			<key>scope</key>
-			<string>variable, support.other.variable, string.other.link, string.regexp, entity.name.tag, entity.other.attribute-name, meta.tag, declaration.tag</string>
+			<string>variable, support.other.variable, string.other.link, string.regexp, entity.name.tag, entity.other.attribute-name, meta.tag, declaration.tag, entity.other.eyebrow.delimiter.variable</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#CC6666</string>
+				<string>#b4635f</string>
 			</dict>
 		</dict>
 		<dict>
@@ -95,18 +95,18 @@
 			<key>name</key>
 			<string>String, Symbols, Inherited Class, Markup Heading</string>
 			<key>scope</key>
-			<string>string, constant.other.symbol, entity.other.inherited-class, markup.heading, variable.parameter.url</string>
+			<string>string, string.contents, constant.other.symbol, entity.other.inherited-class, markup.heading, variable.parameter.url</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#B5BD68</string>
+				<string>#c1cc7e</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>String Contents</string>
+			<string>String quotes</string>
 			<key>scope</key>
-			<string>string-quotes</string>
+			<string>string.quotes</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -268,6 +268,30 @@
 			<dict>
 				<key>background</key>
 				<string>#FF0000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Bracket</string>
+			<key>scope</key>
+			<string>bracket</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#333</string>
+				<key>foreground</key>
+				<string>#fff</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Bracket quote</string>
+			<key>scope</key>
+			<string>bracket.quote</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#333</string>
 			</dict>
 		</dict>
 	</array>

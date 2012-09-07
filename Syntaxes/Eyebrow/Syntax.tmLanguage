@@ -7,69 +7,47 @@
 		<string>eyebrow</string>
 	</array>
 	<key>name</key>
-	<string>HTML Eyebrow</string>
+	<string>Eyebrow Templates</string>
 	<key>patterns</key>
 	<array>
+		<!-- Comment tag -->
 		<dict>
 			<key>begin</key>
-			<string>\{\{!</string>
-			<key>end</key>
-			<string>\}\}</string>
-			<key>name</key>
-			<string>comment.block.eyebrow</string>
-		</dict>
-		<dict>
-			<key>begin</key>
-			<string>\{\{(#|\?|\^|%|&lt;&lt;?|&gt;)?\s?([a-z_]+[\s[^\}]])?</string>
+			<string>{{!</string>
 			<key>captures</key>
 			<dict>
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.control</string>
-				</dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>variable.parameter</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>support.function</string>
+					<string>entity.other.eyebrow.delimiter.comment</string>
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(\/[&lt;%#])?\}\}</string>
+			<string>}}</string>
 			<key>name</key>
-			<string>text.eyebrow.embedded.html</string>
+			<string>comment.block.jinja</string>
+		</dict>
+		<!-- All eyebrow tags -->
+		<dict>
+			<key>begin</key>
+			<string>{{\s?</string>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>entity.other.eyebrow.delimiter.variable</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\s?}}</string>
+			<key>name</key>
+			<string>meta.scope.eyebrow.variable</string>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>include</key>
-					<string>$self</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>@</string>
-					<key>name</key>
-					<string>keyword.operator</string>
-				</dict>
-				<dict>
-					<key>begin</key>
-					<string>"([^"]+)</string>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>string</string>
-						</dict>
-					</dict>
-					<key>end</key>
-					<string>"[\s]?</string>
-					<key>name</key>
-					<string>string-quotes</string>
+					<string>#expression</string>
 				</dict>
 			</array>
 		</dict>
@@ -78,8 +56,91 @@
 			<string>text.html.basic</string>
 		</dict>
 	</array>
+	<key>repository</key>
+	<dict>
+		<key>expression</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<!-- Eyebrow function open tag -->
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.eyebrow</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.function</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.function</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(%|#|&lt;|>|\?|\^)\s?([a-zA-Z_]+)</string>
+				</dict>
+				<!-- Eyebrow function close tag -->
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.eyebrow</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(\/)(%|#|\?)</string>
+				</dict>
+				<!-- Context property -->
+				<dict>
+					<key>match</key>
+					<string>[@][a-zA-Z_]*</string>
+					<key>name</key>
+					<string>entity.name.class</string>
+				</dict>
+				<!-- Quoted strings -->
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>string.quotes</string>
+						</dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>string.contents</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>"(.+)"</string>
+				</dict>
+				<!-- Path -->
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>variable.parameter.url</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(\w+\/?)+\s</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
 	<key>scopeName</key>
-	<string>text.html.eyebrow</string>
+	<string>source.html.eyebrow</string>
 	<key>uuid</key>
 	<string>6aa4dd19-fd95-4150-ac42-70d7ba08ff23</string>
 </dict>

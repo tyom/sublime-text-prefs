@@ -28,9 +28,9 @@
         },
         {
             "name": "Variable, String Link, Regular Expression, Tag Name",
-            "scope": "variable, support.other.variable, string.other.link, string.regexp, entity.name.tag, entity.other.attribute-name, meta.tag, declaration.tag",
+            "scope": "variable, support.other.variable, string.other.link, string.regexp, entity.name.tag, entity.other.attribute-name, meta.tag, declaration.tag, entity.other.eyebrow.delimiter.variable",
             "settings": {
-                "foreground": "#CC6666"
+                "foreground": "#b4635f"
             }
         },
         {
@@ -56,14 +56,14 @@
         },
         {
             "name": "String, Symbols, Inherited Class, Markup Heading",
-            "scope": "string, constant.other.symbol, entity.other.inherited-class, markup.heading, variable.parameter.url",
+            "scope": "string, string.contents, constant.other.symbol, entity.other.inherited-class, markup.heading, variable.parameter.url",
             "settings": {
-                "foreground": "#B5BD68"
+                "foreground": "#c1cc7e"
             }
         },
         {
-            "name": "String Contents",
-            "scope": "string-quotes",
+            "name": "String quotes",
+            "scope": "string.quotes",
             "settings": {
                 "foreground": "#B5BD6888"
             }
@@ -164,6 +164,21 @@
             "scope": "sublimelinter.underline.violation",
             "settings": {
                 "background": "#FF0000"
+            }
+        },
+        {
+            "name": "Bracket",
+            "scope": "bracket",
+            "settings": {
+                "background": "#333",
+                "foreground": "#fff"
+            }
+        },
+        {
+            "name": "Bracket quote",
+            "scope": "bracket.quote",
+            "settings": {
+                "background": "#333"
             }
         }
     ],

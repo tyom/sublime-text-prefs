@@ -1,14 +1,16 @@
 {
-	"auto_upgrade_last_run": 1346923630,
+	"auto_upgrade_last_run": 1346976371,
 	"installed_packages":
 	[
 		"AAAPackageDev",
 		"Alignment",
 		"BeautifyRuby",
+		"BracketHighlighter",
 		"CoffeeScript",
 		"FileDiffs",
 		"Git",
 		"Haml",
+		"Jinja2",
 		"JsFormat",
 		"LESS",
 		"Minifier",
@@ -23,7 +25,6 @@
 		"SublimeLinter",
 		"Tag",
 		"Theme - Aqua",
-		"Theme - Aqua.old",
 		"TrailingSpaces",
 		"ZenCoding"
 	],

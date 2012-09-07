@@ -1,47 +1,85 @@
 {
-  "name": "HTML Eyebrow",
-  "scopeName": "text.html.eyebrow",
-  "fileTypes": ["eyebrow"],
-  "patterns": [
-    {
-      "name": "comment.block.eyebrow",
-      "begin": "\\{\\{!",
-      "end": "\\}\\}"
-    }, {
-      "name": "text.eyebrow.embedded.html",
-      "begin": "\\{\\{(#|\\?|\\^|%|<<?|>)?\\s?([a-z_]+[\\s[^\\}]])?",
-      "captures": {
-        "0": {
-          "name": "keyword.control"
-        },
-        "1": {
-          "name": "variable.parameter"
-        },
-        "2": {
-          "name": "support.function"
-        }
-      },
-      "patterns": [
+    "fileTypes": [
+        "eyebrow"
+    ], 
+    "name": "Eyebrow Templates", 
+    "patterns": [
         {
-          "include": "$self"
-        }, {
-          "name": "keyword.operator",
-          "match": "@"
-        }, {
-          "name": "string-quotes",
-          "begin": "\"([^\"]+)",
-          "captures": {
-            "1": {
-              "name": "string"
-            }
-          },
-          "end": "\"[\\s]?"
+            "begin": "{{!", 
+            "captures": {
+                "0": {
+                    "name": "entity.other.eyebrow.delimiter.comment"
+                }
+            }, 
+            "end": "}}", 
+            "name": "comment.block.jinja"
+        }, 
+        {
+            "begin": "{{\\s?", 
+            "captures": {
+                "0": {
+                    "name": "entity.other.eyebrow.delimiter.variable"
+                }
+            }, 
+            "end": "\\s?}}", 
+            "name": "meta.scope.eyebrow.variable", 
+            "patterns": [
+                {
+                    "include": "#expression"
+                }
+            ]
+        }, 
+        {
+            "include": "text.html.basic"
         }
-      ],
-      "end": "(\\/[<%#])?\\}\\}"
-    }, {
-      "include": "text.html.basic"
-    }
-  ],
-  "uuid": "6aa4dd19-fd95-4150-ac42-70d7ba08ff23"
+    ], 
+    "repository": {
+        "expression": {
+            "patterns": [
+                {
+                    "captures": {
+                        "1": {
+                            "name": "keyword.control.eyebrow"
+                        }, 
+                        "2": {
+                            "name": "entity.name.function"
+                        }, 
+                        "3": {
+                            "name": "entity.name.function"
+                        }
+                    }, 
+                    "match": "(%|#|<|\\?)\\s?([a-zA-Z_]+)"
+                }, 
+                {
+                    "captures": {
+                        "0": {
+                            "name": "keyword.control.eyebrow"
+                        }
+                    }, 
+                    "match": "(\\/)(%|#|\\?)"
+                }, 
+                {
+                    "match": "[a-zA-Z_][a-zA-Z0-9_]*", 
+                    "name": "variable.other.eyebrow"
+                }, 
+                {
+                    "match": "\\b[a-zA-Z_]+", 
+                    "name": "control.eyebrow"
+                }, 
+                {
+                    "captures": {
+                        "0": {
+                            "name": "string.quotes"
+                        }, 
+                        "1": {
+                            "name": "string.contents"
+                        }
+                    }, 
+                    "match": "\"(.+)\""
+                }
+            ]
+        }
+    }, 
+    "scopeName": "source.html.eyebrow", 
+    "uuid": "6aa4dd19-fd95-4150-ac42-70d7ba08ff23"
 }
