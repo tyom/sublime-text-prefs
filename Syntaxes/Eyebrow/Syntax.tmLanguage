@@ -100,19 +100,6 @@
 						</dict>
 					</dict>
 				</dict>
-				<!-- Unquoted path -->
-				<dict>
-					<key>match</key>
-					<string>(([^"]+?)+\/([^\/}\s]+))</string>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>variable.parameter.url</string>
-						</dict>
-					</dict>
-				</dict>
 				<!-- Partial tag -->
 				<dict>
 					<key>match</key>
@@ -120,7 +107,25 @@
 					<key>name</key>
 					<string>punctuation.section.embedded</string>
 				</dict>
-				<!-- Context property -->
+				<!-- Unquoted path -->
+<!-- 				<dict>
+				    <key>match</key>
+				    <string>([^"]+?\/)</string>
+				    <key>captures</key>
+				    <dict>
+				        <key>1</key>
+				        <dict>
+				            <key>name</key>
+				            <string>keyword</string>
+				        </dict>
+				        <key>2</key>
+				        <dict>
+				            <key>name</key>
+				            <string>variable.parameter.url</string>
+				        </dict>
+				    </dict>
+				</dict>
+ -->    			<!-- Context property -->
 				<dict>
 					<key>match</key>
 					<string>[@][a-zA-Z_]*</string>
@@ -181,19 +186,6 @@
 					</dict>
 					<key>match</key>
 					<string>"(.+)"</string>
-				</dict>
-				<!-- Path -->
-				<dict>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>variable.parameter.url</string>
-						</dict>
-					</dict>
-					<key>match</key>
-					<string>(\w+\/)?+</string>
 				</dict>
 			</array>
 		</dict>
