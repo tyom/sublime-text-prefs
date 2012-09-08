@@ -63,6 +63,24 @@
 		<dict>
 			<key>patterns</key>
 			<array>
+				<!-- Quoted strings -->
+				<dict>
+					<key>match</key>
+					<string>"(.+)"</string>
+					<key>captures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>string.quotes</string>
+						</dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>string.contents</string>
+						</dict>
+					</dict>
+				</dict>
 				<!-- Tags -->
 				<dict>
 					<key>match</key>
@@ -100,6 +118,13 @@
 							<string>comment</string>
 						</dict>
 					</dict>
+				</dict>
+				<!-- Operators -->
+				<dict>
+					<key>match</key>
+					<string>(false|true)</string>
+					<key>name</key>
+					<string>keyword.operator</string>
 				</dict>
 				<!-- Partial tag -->
 				<dict>
@@ -194,13 +219,6 @@
 						</dict>
 					</dict>
 				</dict>
-<!-- 				<dict>
-					<key>match</key>
-					<string>=\s_first_opinion</string>
-					<key>name</key>
-					<string>variable.parameter</string>
-				</dict>
- -->				<!-- Filters -->
 				<dict>
 					<key>match</key>
 					<string>[a-zA-Z_]*(\|)(\w+)(:)</string>
@@ -220,24 +238,6 @@
 						<dict>
 							<key>name</key>
 							<string>comment</string>
-						</dict>
-					</dict>
-				</dict>
-				<!-- Quoted strings -->
-				<dict>
-					<key>match</key>
-					<string>"(.+)"</string>
-					<key>captures</key>
-					<dict>
-						<key>0</key>
-						<dict>
-							<key>name</key>
-							<string>string.quotes</string>
-						</dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>string.contents</string>
 						</dict>
 					</dict>
 				</dict>
