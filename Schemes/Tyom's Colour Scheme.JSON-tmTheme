@@ -36,7 +36,7 @@
             "name": "Variable Lighter",
             "scope": "entity.other.eyebrow.delimiter.variable",
             "settings": {
-                "foreground": "#b4635fbb"
+                "foreground": "#795c60"
             }
         },
         {
@@ -65,6 +65,13 @@
             "scope": "string, string.contents, constant.other.symbol, entity.other.inherited-class, markup.heading, variable.parameter.url",
             "settings": {
                 "foreground": "#c1cc7e"
+            }
+        },
+        {
+            "name": "Include",
+            "scope": "string.include.partial",
+            "settings": {
+                "foreground": "#ad9977"
             }
         },
         {

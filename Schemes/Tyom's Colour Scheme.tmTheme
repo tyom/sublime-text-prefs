@@ -66,7 +66,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#b4635faa</string>
+				<string>#795c60</string>
 			</dict>
 		</dict>
 		<dict>
@@ -111,6 +111,17 @@
 			<dict>
 				<key>foreground</key>
 				<string>#c1cc7e</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Include</string>
+			<key>scope</key>
+			<string>string.include.partial</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#ad9977</string>
 			</dict>
 		</dict>
 		<dict>

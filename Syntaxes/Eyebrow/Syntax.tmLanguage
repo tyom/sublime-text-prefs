@@ -10,6 +10,11 @@
 	<string>Eyebrow Templates</string>
 	<key>patterns</key>
 	<array>
+		<!-- Include Standard HTML Syntax -->
+		<dict>
+			<key>include</key>
+			<string>text.html.basic</string>
+		</dict>
 		<!-- Comment tag -->
 		<dict>
 			<key>begin</key>
@@ -51,10 +56,6 @@
 				</dict>
 			</array>
 		</dict>
-		<dict>
-			<key>include</key>
-			<string>text.html.basic</string>
-		</dict>
 	</array>
 	<key>repository</key>
 	<dict>
@@ -65,7 +66,7 @@
 				<!-- Tags -->
 				<dict>
 					<key>match</key>
-					<string>(%|#|\?|&lt;|\^)\s((?!\w+\/)[a-zA-Z_]+)?</string>
+					<string>(%|#|\?|&lt;|\^)\s?((?!\w+\/)[a-zA-Z_]+)?</string>
 					<key>captures</key>
 					<dict>
 						<!-- Tag symbol -->
@@ -116,12 +117,12 @@
 				        <key>1</key>
 				        <dict>
 				            <key>name</key>
-				            <string>variable.parameter.url</string>
+				            <string>string.include.partial</string>
 				        </dict>
 				        <key>2</key>
 				        <dict>
 				            <key>name</key>
-				            <string>variable.parameter.url</string>
+				            <string>string.include.partial</string>
 				        </dict>
 				    </dict>
 				</dict>
@@ -146,7 +147,7 @@
 				<!-- Extends tag -->
 				<dict>
 				    <key>match</key>
-				    <string>(&lt;&lt;)\s([a-zA-Z_\/]+)</string>
+				    <string>(&lt;&lt;)\s([a-zA-Z_\/\.-]+)</string>
 				    <key>captures</key>
 				    <dict>
 				        <key>1</key>
@@ -207,6 +208,8 @@
 				</dict>
 				<!-- Quoted strings -->
 				<dict>
+					<key>match</key>
+					<string>"(.+)"</string>
 					<key>captures</key>
 					<dict>
 						<key>0</key>
@@ -220,8 +223,6 @@
 							<string>string.contents</string>
 						</dict>
 					</dict>
-					<key>match</key>
-					<string>"(.+)"</string>
 				</dict>
 			</array>
 		</dict>
