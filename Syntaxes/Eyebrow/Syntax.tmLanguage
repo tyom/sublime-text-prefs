@@ -108,24 +108,19 @@
 					<string>punctuation.section.embedded</string>
 				</dict>
 				<!-- Unquoted path -->
-<!-- 				<dict>
+				<dict>
 				    <key>match</key>
-				    <string>([^"]+?\/)</string>
+				    <string>([^"]+?\/[a-zA-Z]+)(\s|}})</string>
 				    <key>captures</key>
 				    <dict>
 				        <key>1</key>
-				        <dict>
-				            <key>name</key>
-				            <string>keyword</string>
-				        </dict>
-				        <key>2</key>
 				        <dict>
 				            <key>name</key>
 				            <string>variable.parameter.url</string>
 				        </dict>
 				    </dict>
 				</dict>
- -->    			<!-- Context property -->
+    			<!-- Context property -->
 				<dict>
 					<key>match</key>
 					<string>[@][a-zA-Z_]*</string>
