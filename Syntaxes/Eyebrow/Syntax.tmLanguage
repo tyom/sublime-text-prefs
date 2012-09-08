@@ -65,7 +65,7 @@
 				<!-- Tags -->
 				<dict>
 					<key>match</key>
-					<string>(%|#|\?|&lt;&lt;?|\^)\s([a-zA-Z_]+)?</string>
+					<string>(%|#|\?|&lt;|\^)\s((?!\w+\/)[a-zA-Z_]+)?</string>
 					<key>captures</key>
 					<dict>
 						<!-- Tag symbol -->
@@ -110,13 +110,31 @@
 				<!-- Unquoted path -->
 				<dict>
 				    <key>match</key>
-				    <string>([^"]+?\/[a-zA-Z]+)(\s|}})</string>
+				    <string>\s([^"]+?\/[a-zA-Z]+)(\s|}})</string>
 				    <key>captures</key>
 				    <dict>
 				        <key>1</key>
 				        <dict>
 				            <key>name</key>
 				            <string>variable.parameter.url</string>
+				        </dict>
+				    </dict>
+				</dict>
+				<!-- Extends tag -->
+				<dict>
+				    <key>match</key>
+				    <string>(&lt;&lt;)\s([a-zA-Z_\/]+)</string>
+				    <key>captures</key>
+				    <dict>
+				        <key>1</key>
+				        <dict>
+				            <key>name</key>
+				            <string>punctuation.section.embedded</string>
+				        </dict>
+				        <key>2</key>
+				        <dict>
+				            <key>name</key>
+				            <string>entity.name.class</string>
 				        </dict>
 				    </dict>
 				</dict>
