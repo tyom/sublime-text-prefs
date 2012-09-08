@@ -84,7 +84,7 @@
 				<!-- Tags -->
 				<dict>
 					<key>match</key>
-					<string>(%|#|\?|&lt;|\^)\s?((?!\w+\/)[a-zA-Z_]+)?</string>
+					<string>(%|#|\?|&lt;{1}|\^)\s?((?!\w+\/)[a-zA-Z_]+)?</string>
 					<key>captures</key>
 					<dict>
 						<!-- Tag symbol -->
@@ -187,6 +187,13 @@
 				        </dict>
 				    </dict>
 				</dict>
+    			<!-- Variable -->
+				<dict>
+					<key>match</key>
+					<string>[a-zA-Z_\.0-9]*</string>
+					<key>name</key>
+					<string>entity.name.variable.eyebrow</string>
+				</dict>
     			<!-- Context property -->
 				<dict>
 					<key>match</key>
@@ -210,7 +217,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>variable.parameter</string>
+							<string>support.type</string>
 						</dict>
 						<key>2</key>
 						<dict>

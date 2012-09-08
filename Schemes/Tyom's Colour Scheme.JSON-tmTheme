@@ -64,21 +64,28 @@
             "name": "String, Symbols, Inherited Class, Markup Heading",
             "scope": "string, string.contents, constant.other.symbol, entity.other.inherited-class, markup.heading, variable.parameter.url",
             "settings": {
-                "foreground": "#c1cc7e"
-            }
-        },
-        {
-            "name": "Include",
-            "scope": "string.include.partial",
-            "settings": {
-                "foreground": "#ad9977"
+                "foreground": "#a5af6c"
             }
         },
         {
             "name": "String quotes",
-            "scope": "string.quotes",
+            "scope": "string.quotes, punctuation.definition.string.begin, punctuation.definition.string.end",
             "settings": {
-                "foreground": "#c1cc7e88"
+                "foreground": "#a5af6c88"
+            }
+        },
+        {
+            "name": "Eyebrow Partial",
+            "scope": "string.include.partial",
+            "settings": {
+                "foreground": "#b9d09a"
+            }
+        },
+        {
+            "name": "Eyebrow Variable",
+            "scope": "entity.name.variable.eyebrow",
+            "settings": {
+                "foreground": "#e7caae"
             }
         },
         {

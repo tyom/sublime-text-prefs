@@ -110,29 +110,40 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#c1cc7e</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Include</string>
-			<key>scope</key>
-			<string>string.include.partial</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#ad9977</string>
+				<string>#a5af6c</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>String quotes</string>
 			<key>scope</key>
-			<string>string.quotes</string>
+			<string>string.quotes, punctuation.definition.string.begin, punctuation.definition.string.end</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#c1cc7e88</string>
+				<string>#a5af6c88</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Eyebrow Partial</string>
+			<key>scope</key>
+			<string>string.include.partial</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#b9d09a</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Eyebrow Variable</string>
+			<key>scope</key>
+			<string>entity.name.variable.eyebrow</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#e7caae</string>
 			</dict>
 		</dict>
 		<dict>
