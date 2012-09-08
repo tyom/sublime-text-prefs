@@ -179,11 +179,28 @@
 				<!-- Let statement -->
 				<dict>
 					<key>match</key>
-					<string>=</string>
+					<string>(=)\s([a-zA-Z_]+)</string>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>variable.parameter</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>constant.other.color</string>
+						</dict>
+					</dict>
+				</dict>
+<!-- 				<dict>
+					<key>match</key>
+					<string>=\s_first_opinion</string>
 					<key>name</key>
 					<string>variable.parameter</string>
 				</dict>
-				<!-- Filters -->
+ -->				<!-- Filters -->
 				<dict>
 					<key>match</key>
 					<string>[a-zA-Z_]*(\|)(\w+)(:)</string>
