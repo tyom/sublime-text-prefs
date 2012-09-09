@@ -18,7 +18,7 @@
 		<!-- Eyebrow comment tag -->
 		<dict>
 			<key>begin</key>
-			<string>{{!</string>
+			<string>{{![^\^]</string>
 			<key>captures</key>
 			<dict>
 				<key>0</key>
@@ -115,7 +115,7 @@
 				<!-- • Operators -->
 				<dict>
 					<key>match</key>
-					<string>(false|true|[\W]==?)</string>
+					<string>(false|true|[\W]==?|!)</string>
 					<key>name</key>
 					<string>keyword.operator</string>
 				</dict>
