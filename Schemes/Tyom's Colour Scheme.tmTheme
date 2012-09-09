@@ -60,17 +60,6 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Variable Lighter</string>
-			<key>scope</key>
-			<string>entity.other.eyebrow.delimiter.variable</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#795c60</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>Number, Constant, Function Argument, Tag Attribute, Embedded</string>
 			<key>scope</key>
 			<string>constant.numeric, constant.language, support.constant, constant.character, variable.parameter, punctuation.section.embedded, keyword.other.unit, constant.other.rgb-value</string>
@@ -122,28 +111,6 @@
 			<dict>
 				<key>foreground</key>
 				<string>#a5af6c88</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Eyebrow Partial</string>
-			<key>scope</key>
-			<string>string.include.partial</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#b9d09a</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Eyebrow Variable</string>
-			<key>scope</key>
-			<string>entity.name.variable.eyebrow</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#e7caae</string>
 			</dict>
 		</dict>
 		<dict>
@@ -325,6 +292,39 @@
 			<dict>
 				<key>background</key>
 				<string>#333</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Eyebrow tags</string>
+			<key>scope</key>
+			<string>source.eyebrow.tag</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#795c60</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Eyebrow unquoted string (path)</string>
+			<key>scope</key>
+			<string>string.include.path</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#b9d09a</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Eyebrow Variable</string>
+			<key>scope</key>
+			<string>entity.name.variable.eyebrow</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#e7caae</string>
 			</dict>
 		</dict>
 	</array>

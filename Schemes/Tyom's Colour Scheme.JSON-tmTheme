@@ -32,12 +32,6 @@
             "settings": {
                 "foreground": "#b4635f"
             }
-        },        {
-            "name": "Variable Lighter",
-            "scope": "entity.other.eyebrow.delimiter.variable",
-            "settings": {
-                "foreground": "#795c60"
-            }
         },
         {
             "name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
@@ -72,20 +66,6 @@
             "scope": "string.quotes, punctuation.definition.string.begin, punctuation.definition.string.end",
             "settings": {
                 "foreground": "#a5af6c88"
-            }
-        },
-        {
-            "name": "Eyebrow Partial",
-            "scope": "string.include.partial",
-            "settings": {
-                "foreground": "#b9d09a"
-            }
-        },
-        {
-            "name": "Eyebrow Variable",
-            "scope": "entity.name.variable.eyebrow",
-            "settings": {
-                "foreground": "#e7caae"
             }
         },
         {
@@ -200,7 +180,30 @@
             "settings": {
                 "background": "#333"
             }
+        },
+
+        {
+            "name": "Eyebrow tags",
+            "scope": "source.eyebrow.tag",
+            "settings": {
+                "foreground": "#795c60"
+            }
+        },
+        {
+            "name": "Eyebrow unquoted string (path)",
+            "scope": "string.include.path",
+            "settings": {
+                "foreground": "#b9d09a"
+            }
+        },
+        {
+            "name": "Eyebrow Variable",
+            "scope": "entity.name.variable.eyebrow",
+            "settings": {
+                "foreground": "#e7caae"
+            }
         }
+
     ],
     "uuid": "F96223EB-1A60-4617-92F3-D24D4F13DB09"
 }

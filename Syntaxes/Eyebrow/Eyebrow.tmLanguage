@@ -10,12 +10,12 @@
 	<string>Eyebrow Templates</string>
 	<key>patterns</key>
 	<array>
-		<!-- Include Standard HTML Syntax -->
+		<!-- Include standard HTML syntax -->
 		<dict>
 			<key>include</key>
 			<string>text.html.basic</string>
 		</dict>
-		<!-- Comment tag -->
+		<!-- Eyebrow comment tag -->
 		<dict>
 			<key>begin</key>
 			<string>{{!</string>
@@ -30,24 +30,16 @@
 			<key>end</key>
 			<string>}}</string>
 			<key>name</key>
-			<string>comment.block.jinja</string>
+			<string>comment.block.eyebrow</string>
 		</dict>
-		<!-- Eyebrow -->
+		<!-- Eyebrow syntax -->
 		<dict>
 			<key>begin</key>
-			<string>{{{?\s?</string>
-			<key>captures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>entity.other.eyebrow.delimiter.variable</string>
-				</dict>
-			</dict>
+			<string>{{{?</string>
 			<key>end</key>
-			<string>\s?}}}?</string>
+			<string>}}}?</string>
 			<key>name</key>
-			<string>meta.scope.eyebrow.variable</string>
+			<string>source.eyebrow.tag</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -57,13 +49,14 @@
 			</array>
 		</dict>
 	</array>
+
 	<key>repository</key>
 	<dict>
 		<key>expression</key>
 		<dict>
 			<key>patterns</key>
 			<array>
-				<!-- Quoted strings -->
+				<!-- • Quoted strings -->
 				<dict>
 					<key>match</key>
 					<string>"(.+)"</string>
@@ -81,13 +74,13 @@
 						</dict>
 					</dict>
 				</dict>
-				<!-- Tags -->
+				<!-- • Open tag -->
 				<dict>
 					<key>match</key>
-					<string>(%|#|\?|&lt;{1}|\^)\s?((?!\w+\/)[a-zA-Z_]+)?</string>
+					<string>(%|#)\s?((?!\w+\/)[a-zA-Z_]+)?</string>
 					<key>captures</key>
 					<dict>
-						<!-- Tag symbol -->
+						<!-- Tag type -->
 						<key>1</key>
 						<dict>
 							<key>name</key>
@@ -101,57 +94,73 @@
 						</dict>
 					</dict>
 				</dict>
-				<!-- Close tag -->
+				<!-- • Close tag -->
 				<dict>
 					<key>match</key>
-					<string>(\/)(%|#|\?|&lt;)</string>
+					<string>(\/)([\W])</string>
 					<key>captures</key>
 					<dict>
-						<key>0</key>
-						<dict>
-							<key>name</key>
-							<string>keyword.control.eyebrow</string>
-						</dict>
 						<key>1</key>
 						<dict>
 							<key>name</key>
 							<string>comment</string>
 						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.eyebrow</string>
+						</dict>
 					</dict>
 				</dict>
-				<!-- Operators -->
+				<!-- • Operators -->
 				<dict>
 					<key>match</key>
-					<string>(false|true)</string>
+					<string>(false|true|[\W]==?)</string>
 					<key>name</key>
 					<string>keyword.operator</string>
 				</dict>
-				<!-- Partial tag -->
+				<!-- • Conditions -->
+				<dict>
+					<key>match</key>
+					<string>(\?|\^)</string>
+					<key>name</key>
+					<string>keyword.control.eyebrow</string>
+				</dict>
+				<!-- • Slots -->
+				<dict>
+					<key>match</key>
+					<string>(&lt;{1})\s([a-zA-Z_]+)</string>
+					<key>captures</key>
+					<dict>
+						<!-- Tag type -->
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.eyebrow</string>
+						</dict>
+						<!-- Custom tags -->
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.function</string>
+						</dict>
+					</dict>
+				</dict>
+				<!-- • Unquoted path -->
+				<dict>
+				    <key>match</key>
+				    <string>\s([^"]+?\/[a-zA-Z]+)([^}\s]+)</string>
+				    <key>name</key>
+					<string>string.include.path</string>
+				</dict>
+				<!-- • Partial tag -->
 				<dict>
 					<key>match</key>
 					<string>></string>
 					<key>name</key>
 					<string>punctuation.section.embedded</string>
 				</dict>
-				<!-- Unquoted path -->
-				<dict>
-				    <key>match</key>
-				    <string>\s([^"]+?\/[a-zA-Z]+)([^}\s]+)</string>
-				    <key>captures</key>
-				    <dict>
-				        <key>1</key>
-				        <dict>
-				            <key>name</key>
-				            <string>string.include.partial</string>
-				        </dict>
-				        <key>2</key>
-				        <dict>
-				            <key>name</key>
-				            <string>string.include.partial</string>
-				        </dict>
-				    </dict>
-				</dict>
-				<!-- Partial params -->
+				<!-- • Partial params -->
 				<dict>
 				    <key>match</key>
 				    <string>([a-zA-Z_]+)([:])</string>
@@ -169,10 +178,10 @@
 				        </dict>
 				    </dict>
 				</dict>
-				<!-- Extends tag -->
+				<!-- • Extends tag -->
 				<dict>
 				    <key>match</key>
-				    <string>(&lt;&lt;)\s([a-zA-Z_\/\.-]+)</string>
+				    <string>(&lt;{2})\s([a-zA-Z_\/\.-]+)</string>
 				    <key>captures</key>
 				    <dict>
 				        <key>1</key>
@@ -187,28 +196,28 @@
 				        </dict>
 				    </dict>
 				</dict>
-    			<!-- Variable -->
+    			<!-- • Variable -->
 				<dict>
 					<key>match</key>
 					<string>[a-zA-Z_\.0-9]*</string>
 					<key>name</key>
 					<string>entity.name.variable.eyebrow</string>
 				</dict>
-    			<!-- Context property -->
+    			<!-- • Context property -->
 				<dict>
 					<key>match</key>
-					<string>[@][a-zA-Z_]*</string>
+					<string>[@]</string>
 					<key>name</key>
 					<string>constant.other.color</string>
 				</dict>
-				<!-- Safe property -->
+				<!-- • Safe property -->
 				<dict>
 					<key>match</key>
 					<string>&amp;</string>
 					<key>name</key>
 					<string>constant.other.color</string>
 				</dict>
-				<!-- Let statement -->
+				<!-- • Let statement -->
 				<dict>
 					<key>match</key>
 					<string>(=)\s([a-zA-Z_]+)</string>
@@ -226,6 +235,7 @@
 						</dict>
 					</dict>
 				</dict>
+				<!-- • Filters -->
 				<dict>
 					<key>match</key>
 					<string>[a-zA-Z_]*(\|)(\w+)(:)</string>
@@ -252,7 +262,7 @@
 		</dict>
 	</dict>
 	<key>scopeName</key>
-	<string>source.html.eyebrow</string>
+	<string>source.eyebrow</string>
 	<key>uuid</key>
 	<string>6aa4dd19-fd95-4150-ac42-70d7ba08ff23</string>
 </dict>
