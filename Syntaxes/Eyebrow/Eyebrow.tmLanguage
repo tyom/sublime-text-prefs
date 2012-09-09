@@ -129,7 +129,7 @@
 				<!-- • Slots -->
 				<dict>
 					<key>match</key>
-					<string>(&lt;{1})\s([a-zA-Z_]+)</string>
+					<string>(&lt;{1})\s?([a-zA-Z_]+)</string>
 					<key>captures</key>
 					<dict>
 						<!-- Tag type -->
