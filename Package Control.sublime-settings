@@ -1,5 +1,5 @@
 {
-	"auto_upgrade_last_run": 1347147992,
+	"auto_upgrade_last_run": 1347267684,
 	"installed_packages":
 	[
 		"AAAPackageDev",
@@ -26,6 +26,7 @@
 		"SublimeLinter",
 		"Tag",
 		"Theme - Aqua",
+		"Theme - Aqua.old",
 		"TrailingSpaces",
 		"ZenCoding"
 	],

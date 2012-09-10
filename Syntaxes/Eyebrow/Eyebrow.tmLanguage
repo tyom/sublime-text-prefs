@@ -148,10 +148,16 @@
 				</dict>
 				<!-- • Unquoted path -->
 				<dict>
-				    <key>match</key>
-				    <string>\s([^"]+?\/[a-zA-Z]+)([^}\s]+)</string>
-				    <key>name</key>
-					<string>string.include.path</string>
+					<key>match</key>
+					<string>\s([^"]+?\/[a-zA-Z]+)\s</string>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>string.include.path</string>
+						</dict>
+					</dict>
 				</dict>
 				<!-- • Partial tag -->
 				<dict>
@@ -238,7 +244,7 @@
 				<!-- • Filters -->
 				<dict>
 					<key>match</key>
-					<string>[a-zA-Z_]*(\|)(\w+)(:)</string>
+					<string>[a-zA-Z_]*(\|)(\w+)(:)?</string>
 					<key>captures</key>
 					<dict>
 						<key>1</key>
