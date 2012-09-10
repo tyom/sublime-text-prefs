@@ -149,7 +149,7 @@
 				<!-- • Unquoted path -->
 				<dict>
 					<key>match</key>
-					<string>\s([^"]+?\/[a-zA-Z]+)\s</string>
+					<string>\s([^"]+?\/[a-zA-Z_-]+)\s</string>
 					<key>captures</key>
 					<dict>
 						<key>1</key>
