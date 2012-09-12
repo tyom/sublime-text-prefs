@@ -298,7 +298,7 @@
 			<key>name</key>
 			<string>Eyebrow tags</string>
 			<key>scope</key>
-			<string>source.eyebrow.tag</string>
+			<string>text.html.eyebrow.tag</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>

@@ -184,7 +184,7 @@
 
         {
             "name": "Eyebrow tags",
-            "scope": "source.eyebrow.tag",
+            "scope": "text.html.eyebrow.tag",
             "settings": {
                 "foreground": "#795c60"
             }

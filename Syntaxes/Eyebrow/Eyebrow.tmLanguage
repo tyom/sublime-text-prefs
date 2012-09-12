@@ -39,7 +39,7 @@
 			<key>end</key>
 			<string>}}}?</string>
 			<key>name</key>
-			<string>source.eyebrow.tag</string>
+			<string>text.html.eyebrow.tag</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -268,7 +268,7 @@
 		</dict>
 	</dict>
 	<key>scopeName</key>
-	<string>source.eyebrow</string>
+	<string>text.html.eyebrow</string>
 	<key>uuid</key>
 	<string>6aa4dd19-fd95-4150-ac42-70d7ba08ff23</string>
 </dict>
