@@ -1,15 +1,15 @@
 {
-	"color_scheme": "Packages/User/Tyom's Colour Scheme.tmTheme",
+	"color_scheme": "Packages/User/Schemes/Tyom's Colour Scheme.tmTheme",
+	"detect_slow_plugins": false,
 	"dictionary": "Packages/Language - English/en_GB.dic",
-    "font_face": "Andale Mono",
-	"font_size": 15,
+	"ensure_newline_at_eof_on_save": true,
+	"font_face": "Menlo",
+	"font_size": 14.0,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
-	"theme": "ProKit.sublime-theme",
-    "spell_check": true,
-    "use_simple_full_screen": true,
+	"theme": "Soda Dark.sublime-theme",
 	"translate_tabs_to_spaces": true,
-    "ensure_newline_at_eof_on_save": true
+	"use_simple_full_screen": true
 }

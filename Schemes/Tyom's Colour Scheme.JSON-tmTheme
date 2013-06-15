@@ -1,0 +1,209 @@
+{
+    "comment": "http://chriskempson.com",
+    "name": "Tomorrow Night Refined",
+    "settings": [
+        {
+            "settings": {
+                "background": "#212121",
+                "caret": "#AEAFAD",
+                "foreground": "#C5C8C6",
+                "invisibles": "#4B4E55",
+                "lineHighlight": "#333333",
+                "selection": "#444444"
+            }
+        },
+        {
+            "name": "Comment",
+            "scope": "comment",
+            "settings": {
+                "foreground": "#969896"
+            }
+        },
+        {
+            "name": "Foreground",
+            "scope": "keyword.operator.class, constant.other, source.php.embedded.line",
+            "settings": {
+                "foreground": "#CED1CF"
+            }
+        },
+        {
+            "name": "Variable, String Link, Regular Expression, Tag Name",
+            "scope": "variable, support.other.variable, string.other.link, string.regexp, entity.name.tag, entity.other.attribute-name, meta.tag, declaration.tag",
+            "settings": {
+                "foreground": "#b4635f"
+            }
+        },
+        {
+            "name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
+            "scope": "constant.numeric, constant.language, support.constant, constant.character, variable.parameter, punctuation.section.embedded, keyword.other.unit, constant.other.rgb-value",
+            "settings": {
+                "foreground": "#DE935F"
+            }
+        },
+        {
+            "name": "Unit",
+            "scope": "constant.other.unit.sass",
+            "settings": {
+                "foreground": "#DE935F88"
+            }
+        },
+        {
+            "name": "Class, Support",
+            "scope": "entity.name.class, entity.name.type.class, support.type, support.class",
+            "settings": {
+                "foreground": "#F0C674"
+            }
+        },
+        {
+            "name": "String, Symbols, Inherited Class, Markup Heading",
+            "scope": "string, string.contents, constant.other.symbol, entity.other.inherited-class, markup.heading, variable.parameter.url",
+            "settings": {
+                "foreground": "#a5af6c"
+            }
+        },
+        {
+            "name": "String quotes",
+            "scope": "string.quotes, punctuation.definition.string.begin, punctuation.definition.string.end",
+            "settings": {
+                "foreground": "#a5af6c88"
+            }
+        },
+        {
+            "name": "Operator, Misc",
+            "scope": "keyword.operator, constant.other.color",
+            "settings": {
+                "foreground": "#8ABEB7"
+            }
+        },
+        {
+            "name": "Function, Special Method, Block Level",
+            "scope": "entity.name.function, meta.function-call, support.function, keyword.other.special-method, meta.block-level, support.constant.@rules.sass",
+            "settings": {
+                "foreground": "#81A2BE"
+            }
+        },
+        {
+            "name": "Keyword, Storage",
+            "scope": "keyword, storage, storage.type, entity.name.tag.css",
+            "settings": {
+                "foreground": "#B294BB"
+            }
+        },
+        {
+            "name": "Invalid",
+            "scope": "invalid",
+            "settings": {
+                "background": "#DF5F5F",
+                "foreground": "#CED2CF"
+            }
+        },
+        {
+            "name": "Separator",
+            "scope": "meta.separator",
+            "settings": {
+                "background": "#82A3BF",
+                "foreground": "#CED2CF"
+            }
+        },
+        {
+            "name": "Deprecated",
+            "scope": "invalid.deprecated",
+            "settings": {
+                "background": "#B798BF",
+                "foreground": "#CED2CF"
+            }
+        },
+        {
+            "name": "SublimeLinter Annotations",
+            "scope": "sublimelinter.notes",
+            "settings": {
+                "background": "#FFFFAA",
+                "foreground": "#FFFFFF"
+            }
+        },
+        {
+            "name": "SublimeLinter Error Outline",
+            "scope": "sublimelinter.outline.illegal",
+            "settings": {
+                "background": "#dc133a66",
+                "foreground": "#dc133a44"
+            }
+        },
+        {
+            "name": "SublimeLinter Error Underline",
+            "scope": "sublimelinter.underline.illegal",
+            "settings": {
+                "background": "#dc133a"
+            }
+        },
+        {
+            "name": "SublimeLinter Warning Outline",
+            "scope": "sublimelinter.outline.warning",
+            "settings": {
+                "background": "#DF940066",
+                "foreground": "#DF940066"
+            }
+        },
+        {
+            "name": "SublimeLinter Warning Underline",
+            "scope": "sublimelinter.underline.warning",
+            "settings": {
+                "background": "#DF9400"
+            }
+        },
+        {
+            "name": "SublimeLinter Violation Outline",
+            "scope": "sublimelinter.outline.violation",
+            "settings": {
+                "background": "#ffffff33",
+                "foreground": "#FFFFFF"
+            }
+        },
+        {
+            "name": "SublimeLinter Violation Underline",
+            "scope": "sublimelinter.underline.violation",
+            "settings": {
+                "background": "#FF0000"
+            }
+        },
+        {
+            "name": "Bracket",
+            "scope": "bracket",
+            "settings": {
+                "background": "#333",
+                "foreground": "#fff"
+            }
+        },
+        {
+            "name": "Bracket quote",
+            "scope": "bracket.quote",
+            "settings": {
+                "background": "#333"
+            }
+        },
+
+        {
+            "name": "Eyebrow tags",
+            "scope": "text.html.eyebrow.tag",
+            "settings": {
+                "foreground": "#795c60"
+            }
+        },
+        {
+            "name": "Eyebrow unquoted string (path)",
+            "scope": "string.include.path",
+            "settings": {
+                "foreground": "#b9d09a"
+            }
+        },
+        {
+            "name": "Eyebrow Variable",
+            "scope": "entity.name.variable.eyebrow",
+            "settings": {
+                "foreground": "#e7caae"
+            }
+        }
+
+    ],
+    "uuid": "F96223EB-1A60-4617-92F3-D24D4F13DB09"
+}

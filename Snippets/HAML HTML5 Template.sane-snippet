@@ -1,5 +1,8 @@
-<snippet>
-	<content><![CDATA[
+---
+description: HAML HTML5 Template
+tabTrigger:  template
+scope:       text.haml
+---
 !!! 5
 %html{ :lang => "en" }
   %head
@@ -10,9 +13,3 @@
     %script{ :src => "${3:script}" }
   %body
     #page
-]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>template</tabTrigger>
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>text.haml</scope>
-</snippet>

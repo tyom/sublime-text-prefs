@@ -1,0 +1,18 @@
+{
+    // Scope? (Defined in theme files.)
+    // Examples: (keyword|string|number)
+    "quote_scope" : "bracket.quote",
+    "curly_scope" : "bracket",
+    "round_scope" : "bracket",
+    "square_scope": "bracket",
+    "angle_scope" : "bracket",
+    "tag_scope"   : "bracket",
+
+    // Outline? (solid|outline|underline|none)
+    "quote_style" : "outline",
+    "curly_style" : "outline",
+    "round_style" : "outline",
+    "square_style": "outline",
+    "angle_style" : "outline",
+    "tag_style"   : "outline"
+}
