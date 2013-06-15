@@ -1,6 +1,20 @@
 {
-	// "sublimelinter_fill_outlines": true,
-	// "sublimelinter_popup_errors_on_save": true,
-	"sublimelinter_gutter_marks": true,
-    "sublimelinter_notes": true
+    "sublimelinter_gutter_marks": true,
+
+    "jshint_options": {
+        // Enforcing
+        "eqeqeq": true,
+        "quotmark": true,
+        "trailing": true,
+        "undef": true,
+
+        // Relaxing
+        "laxcomma": true,
+        "strict": false,
+        "shadow": true,
+
+        // Environments
+        "browser": true,
+        "node": true
+    }
 }
