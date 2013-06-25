@@ -182,6 +182,8 @@
             }
         },
 
+        {   "Eyebrow": "========================="},
+
         {
             "name": "Eyebrow tags",
             "scope": "text.html.eyebrow.tag",
@@ -201,6 +203,86 @@
             "scope": "entity.name.variable.eyebrow",
             "settings": {
                 "foreground": "#e7caae"
+            }
+        },
+
+        {   "GitGutter": "========================="},
+
+        {
+            "name": "GitGutter deleted",
+            "scope": "markup.deleted.git_gutter",
+            "settings": {
+                "foreground": "#800100"
+            }
+        },
+        {
+            "name": "GitGutter inserted",
+            "scope": "markup.inserted.git_gutter",
+            "settings": {
+                "foreground": "#006603"
+            }
+        },
+        {
+            "name": "GitGutter changed",
+            "scope": "markup.changed.git_gutter",
+            "settings": {
+                "foreground": "#004c66"
+            }
+        },
+
+        {   "SublimeLinter": "========================="},
+
+        {
+            "name": "SublimeLinter Annotations",
+            "scope": "sublimelinter.annotations",
+            "settings": {
+                "background": "#ffffaa",
+                "foreground": "#ffffff"
+            }
+        },
+        {
+            "name": "SublimeLinter Error Outline",
+            "scope": "sublimelinter.outline.illegal",
+            "settings": {
+                "background": "#ff4a52",
+                "foreground": "#ffffff"
+            }
+        },
+        {
+            "name": "SublimeLinter Warning Underline",
+            "scope": "sublimelinter.underline.illegal",
+            "settings": {
+                "background": "#dfc100"
+            }
+        },
+        {
+            "name": "SublimeLinter Warning Outline",
+            "scope": "sublimelinter.outline.warning",
+            "settings": {
+                "background": "#df9400",
+                "foreground": "#ffffff"
+            }
+        },
+        {
+            "name": "SublimeLinter Warning Underline",
+            "scope": "sublimelinter.underline.warning",
+            "settings": {
+                "background": "#e4e500"
+            }
+        },
+        {
+            "name": "SublimeLinter Violation Outline",
+            "scope": "sublimelinter.outline.violation",
+            "settings": {
+                "background": "#ffffff33",
+                "foreground": "#ffffff"
+            }
+        },
+        {
+            "name": "SublimeLinter Violation Underline",
+            "scope": "sublimelinter.underline.violation",
+            "settings": {
+                "background": "#ff0000"
             }
         }
 

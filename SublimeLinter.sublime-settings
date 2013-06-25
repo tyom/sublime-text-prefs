@@ -1,5 +1,6 @@
 {
     "sublimelinter_gutter_marks": true,
+    "sublimelinter_mark_style": "none",  // none, outline, fill
 
     "jshint_options": {
         // Enforcing
@@ -15,6 +16,11 @@
 
         // Environments
         "browser": true,
-        "node": true
+        "node": true,
+
+        // Predefined globals
+        "predef": [
+            "define"
+        ]
     }
 }
