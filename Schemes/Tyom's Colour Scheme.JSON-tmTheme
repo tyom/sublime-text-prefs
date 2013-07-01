@@ -244,15 +244,15 @@
             "name": "SublimeLinter Error Outline",
             "scope": "sublimelinter.outline.illegal",
             "settings": {
-                "background": "#ff4a52",
+                "background": "#ff4a5233",
                 "foreground": "#ffffff"
             }
         },
         {
-            "name": "SublimeLinter Warning Underline",
+            "name": "SublimeLinter Error Underline",
             "scope": "sublimelinter.underline.illegal",
             "settings": {
-                "background": "#dfc100"
+                "background": "#df1d00"
             }
         },
         {

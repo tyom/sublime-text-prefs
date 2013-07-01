@@ -393,20 +393,20 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#ff4a52</string>
+				<string>#ff4a5233</string>
 				<key>foreground</key>
-				<string>#ffffff</string>
+				<string>#ff4a52</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>SublimeLinter Warning Underline</string>
+			<string>SublimeLinter Error Underline</string>
 			<key>scope</key>
 			<string>sublimelinter.underline.illegal</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#dfc100</string>
+				<string>#df1d00</string>
 			</dict>
 		</dict>
 		<dict>
