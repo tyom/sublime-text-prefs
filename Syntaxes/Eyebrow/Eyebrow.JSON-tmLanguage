@@ -1,33 +1,33 @@
 {
     "fileTypes": [
         "eyebrow"
-    ], 
-    "name": "Eyebrow Templates", 
+    ],
+    "name": "Eyebrow Templates",
     "patterns": [
         {
-            "begin": "{{!", 
+            "begin": "{{!",
             "captures": {
                 "0": {
                     "name": "entity.other.eyebrow.delimiter.comment"
                 }
-            }, 
-            "end": "}}", 
+            },
+            "end": "}}",
             "name": "comment.block.eyebrow"
-        }, 
+        },
         {
-            "begin": "{{{?", 
-            "end": "}}}?", 
-            "name": "source.eyebrow", 
+            "begin": "{{{?",
+            "end": "}}}?",
+            "name": "source.eyebrow",
             "patterns": [
                 {
                     "include": "#expression"
                 }
             ]
-        }, 
+        },
         {
             "include": "text.html.basic"
         }
-    ], 
+    ],
     "repository": {
         "expression": {
             "patterns": [
@@ -35,109 +35,109 @@
                     "captures": {
                         "0": {
                             "name": "string.quotes"
-                        }, 
+                        },
                         "1": {
                             "name": "string.contents"
                         }
-                    }, 
+                    },
                     "match": "\"(.+)\""
-                }, 
+                },
                 {
                     "captures": {
                         "1": {
                             "name": "keyword.control.eyebrow"
-                        }, 
+                        },
                         "2": {
                             "name": "entity.name.function"
                         }
-                    }, 
+                    },
                     "match": "(%|#|\\?|<{1}|\\^)\\s?((?!\\w+\\/)[a-zA-Z_]+)?"
-                }, 
+                },
                 {
                     "captures": {
                         "0": {
                             "name": "keyword.control.eyebrow"
-                        }, 
+                        },
                         "1": {
                             "name": "comment"
                         }
-                    }, 
+                    },
                     "match": "(\\/)(%|#|\\?|<)"
-                }, 
+                },
                 {
-                    "match": "(false|true)", 
+                    "match": "(false|true)",
                     "name": "keyword.operator"
-                }, 
+                },
                 {
-                    "match": ">", 
+                    "match": ">",
                     "name": "punctuation.section.embedded"
-                }, 
+                },
                 {
-                    "match": "\\s([^\"]+?\\/[a-zA-Z]+)([^}\\s]+)", 
+                    "match": "\\s([^\"]+?\\/[a-zA-Z]+)([^}\\s]+)",
                     "name": "string.include.path"
-                }, 
+                },
                 {
                     "captures": {
                         "1": {
                             "name": "storage"
-                        }, 
+                        },
                         "2": {
                             "name": "comment"
                         }
-                    }, 
+                    },
                     "match": "([a-zA-Z_]+)([:])"
-                }, 
+                },
                 {
                     "captures": {
                         "1": {
                             "name": "punctuation.section.embedded"
-                        }, 
+                        },
                         "2": {
                             "name": "entity.name.class"
                         }
-                    }, 
+                    },
                     "match": "(<<)\\s([a-zA-Z_\\/\\.-]+)"
-                }, 
+                },
                 {
-                    "match": "[a-zA-Z_\\.0-9]*", 
+                    "match": "[a-zA-Z_\\.0-9]*",
                     "name": "entity.name.variable.eyebrow"
-                }, 
+                },
                 {
-                    "match": "[@]", 
+                    "match": "[@]",
                     "name": "constant.other.color"
-                }, 
+                },
                 {
-                    "match": "&", 
+                    "match": "&",
                     "name": "constant.other.color"
-                }, 
+                },
                 {
                     "captures": {
                         "1": {
                             "name": "support.type"
-                        }, 
+                        },
                         "2": {
                             "name": "constant.other.color"
                         }
-                    }, 
+                    },
                     "match": "(=)\\s([a-zA-Z_]+)"
-                }, 
+                },
                 {
                     "captures": {
                         "1": {
                             "name": "entity.other.eyebrow.delimiter.variable"
-                        }, 
+                        },
                         "2": {
                             "name": "constant.other.color"
-                        }, 
+                        },
                         "3": {
                             "name": "comment"
                         }
-                    }, 
+                    },
                     "match": "[a-zA-Z_]*(\\|)(\\w+)(:)"
                 }
             ]
         }
-    }, 
-    "scopeName": "source.html.eyebrow", 
+    },
+    "scopeName": "source.html.eyebrow",
     "uuid": "6aa4dd19-fd95-4150-ac42-70d7ba08ff23"
 }
