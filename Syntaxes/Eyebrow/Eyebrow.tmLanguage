@@ -59,7 +59,7 @@
 				<!-- • Quoted strings -->
 				<dict>
 					<key>match</key>
-					<string>"(.+)"</string>
+					<string>"(.+?)"</string>
 					<key>captures</key>
 					<dict>
 						<key>0</key>
@@ -165,6 +165,13 @@
 					<string>></string>
 					<key>name</key>
 					<string>punctuation.section.embedded</string>
+				</dict>
+				<!-- • Events -->
+				<dict>
+					<key>match</key>
+					<string>(on|->)\s+</string>
+					<key>name</key>
+					<string>string.other.link</string>
 				</dict>
 				<!-- • Partial params -->
 				<dict>
